@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/ooooggg/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.102" />
+        <entry key="..\:/ooooggg/app/src/main/res/drawable/bt_border.xml" value="0.2025" />
+        <entry key="..\:/ooooggg/app/src/main/res/drawable/circlebackground.xml" value="0.1955" />
+        <entry key="..\:/ooooggg/app/src/main/res/drawable/corners.xml" value="0.1955" />
+        <entry key="..\:/ooooggg/app/src/main/res/drawable/corners_bg.xml" value="0.1955" />
+        <entry key="..\:/ooooggg/app/src/main/res/drawable/ic_launcher_background.xml" value="0.102" />
+        <entry key="..\:/ooooggg/app/src/main/res/drawable/rounded_corners.xml" value="0.2025" />
+        <entry key="..\:/ooooggg/app/src/main/res/layout/activity_flowmap.xml" value="0.18" />
+        <entry key="..\:/ooooggg/app/src/main/res/layout/activity_hualien.xml" value="0.25" />
+        <entry key="..\:/ooooggg/app/src/main/res/layout/activity_hualien_thread.xml" value="0.22644927536231885" />
+        <entry key="..\:/ooooggg/app/src/main/res/layout/activity_log_in.xml" value="0.22" />
+        <entry key="..\:/ooooggg/app/src/main/res/layout/activity_main.xml" value="0.22031823745410037" />
+        <entry key="..\:/ooooggg/app/src/main/res/layout/activity_main2.xml" value="0.22" />
+        <entry key="..\:/ooooggg/app/src/main/res/layout/activity_member_center.xml" value="0.25" />
+        <entry key="..\:/ooooggg/app/src/main/res/layout/activity_other_thread.xml" value="0.17806484295845998" />
+        <entry key="..\:/ooooggg/app/src/main/res/layout/activity_register.xml" value="0.33" />
+        <entry key="..\:/ooooggg/app/src/main/res/layout/activity_tainan.xml" value="0.22644927536231885" />
+        <entry key="..\:/ooooggg/app/src/main/res/layout/activity_tainan_thread.xml" value="0.22644927536231885" />
+        <entry key="..\:/ooooggg/app/src/main/res/layout/activity_taipei.xml" value="0.22644927536231885" />
+        <entry key="..\:/ooooggg/app/src/main/res/layout/activity_taipei_thread.xml" value="0.2234375" />
+        <entry key="..\:/ooooggg/app/src/main/res/layout/message_string.xml" value="0.18018018018018017" />
+        <entry key="..\:/ooooggg/app/src/main/res/menu/membermenu.xml" value="0.1" />
+        <entry key="..\:/ooooggg/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.207" />
+        <entry key="..\:/ooooggg/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.207" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

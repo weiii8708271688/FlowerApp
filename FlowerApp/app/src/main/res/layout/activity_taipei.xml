@@ -1,0 +1,786 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Taipei">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.DayNight.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ToolbarPopupTheme"
+        app:titleTextAppearance="@style/TitleTextSize" />
+
+<ScrollView
+    android:id="@+id/SV"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="55dp"
+    tools:context=".Taipei">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:gravity="bottom"
+            android:text="最佳賞花期"
+            android:textSize="24dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="#FFD7D4"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="170dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/image1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/flower_time_icon1" />
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:gravity="center_horizontal"
+                    android:text="6/1"
+                    android:textSize="24dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="160dp"
+                android:layout_height="15dp"
+                android:layout_marginBottom="15dp"
+                android:src="@drawable/flower_time_icon5" />
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="170dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/image3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/flower_time_icon2" />
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="right"
+                    android:gravity="center_horizontal"
+                    android:text="6/10"
+                    android:textSize="24dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/image4"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/line" />
+
+        <TextView
+            android:id="@+id/weather"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:gravity="bottom"
+            android:text="一周天氣預報"
+            android:textSize="24dp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/imgday1"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/day1"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_margin="20dp" />
+
+                    <TextView
+                        android:id="@+id/imgtext1"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/imgday2"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/day2"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_margin="20dp" />
+
+                    <TextView
+                        android:id="@+id/imgtext2"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/imgday3"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/day3"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_margin="20dp" />
+
+                    <TextView
+                        android:id="@+id/imgtext3"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/imgday4"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/day4"
+                        android:gravity="center"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_margin="20dp" />
+
+                    <TextView
+                        android:id="@+id/imgtext4"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/imgday5"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/day5"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_margin="20dp" />
+
+                    <TextView
+                        android:id="@+id/imgtext5"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/imgday6"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/day6"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_margin="20dp" />
+
+                    <TextView
+                        android:id="@+id/imgtext6"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/imgday7"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/day7"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_margin="20dp" />
+
+                    <TextView
+                        android:id="@+id/imgtext7"
+                        android:gravity="center"
+                        android:textSize="60dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </HorizontalScrollView>
+
+        <ImageView
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/line" />
+
+        <TextView
+            android:id="@+id/maptext"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:gravity="bottom"
+            android:text="Google Map"
+            android:textSize="24dp" />
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            tools:context=".MainActivity" />
+
+        <ImageView
+            android:id="@+id/line3"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/line" />
+
+        <TextView
+            android:id="@+id/parking"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:gravity="bottom"
+            android:text="停車資訊"
+            android:textSize="24dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+
+            android:backgroundTint="#C4C4C4">
+
+            <TextView
+                android:id="@+id/taipeiP1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="7dp"
+                android:gravity="top"
+                android:text=" 高家繡球花田水車寮 : 湖田國小"
+                android:background="@drawable/rounded_corners"
+                android:textStyle="bold"
+                android:textSize="24dp"
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/taipeiP2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="7dp"
+                android:gravity="top"
+                android:text=" 大梯田 : 無停車場"
+                android:background="@drawable/rounded_corners"
+                android:textStyle="bold"
+                android:textSize="24dp"/>
+
+            <TextView
+                android:id="@+id/taipeiP3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="7dp"
+                android:gravity="top"
+                android:text=" 大賞園 : 環湖大道免費停車格"
+                android:background="@drawable/rounded_corners"
+                android:textStyle="bold"
+                android:textSize="24dp"
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/taipeiP4"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="7dp"
+                android:gravity="top"
+                android:text=" 財福繡球花園 : 農場旁廣場"
+                android:background="@drawable/rounded_corners"
+                android:textStyle="bold"
+                android:textSize="24dp"
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/taipeiP5"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="7dp"
+                android:gravity="top"
+                android:text=" 午後陽光 : 湖田大樹下餐廳"
+                android:background="@drawable/rounded_corners"
+                android:textStyle="bold"
+                android:textSize="24dp"
+                android:clickable="true"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/line4"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/line" />
+
+        <TextView
+            android:id="@+id/tour"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:gravity="bottom"
+            android:text="觀光旅遊"
+            android:textSize="24dp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/gray_background"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="250dp"
+                        android:layout_height="300dp"
+                        android:layout_marginLeft="25dp"
+                        android:src="@drawable/yangmingshan1" />
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="-30dp"
+                        android:text="竹子湖黑森林"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="25dp"
+                        android:text="地址:台北市北投區竹子湖路"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="25dp"
+                        android:text="交通:台北車站→搭乘紅線前往北投站班車→於北投站轉搭客運前往風架口班車→抵達竹子湖黑森林"
+                        android:textSize="12sp" />
+
+
+                    <ImageButton
+                        android:id="@+id/Yangmingshan_seemore1"
+                        android:layout_width="120dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="170dp"
+                        android:background="@drawable/seemore_removebg_preview" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/gray_background"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="250dp"
+                        android:layout_height="300dp"
+                        android:layout_marginLeft="25dp"
+                        android:src="@drawable/yangmingshan2" />
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="-30dp"
+                        android:text="陽明山擎天崗"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="25dp"
+                        android:text="地址:台北市士林區菁山路101巷246號"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="25dp"
+                        android:text="交通:小15公車"
+                        android:textSize="12sp" />
+
+
+                    <ImageButton
+                        android:id="@+id/Yangmingshan_seemore2"
+                        android:layout_width="120dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="170dp"
+                        android:background="@drawable/seemore_removebg_preview" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/gray_background"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="250dp"
+                        android:layout_height="300dp"
+                        android:layout_marginLeft="25dp"
+                        android:src="@drawable/yangmingshan3" />
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="-30dp"
+                        android:text="夢幻湖"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="25dp"
+                        android:text="地址:台北市北投區中湖戰備道路"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="25dp"
+                        android:text="交通:士林→仰德大道→山仔后→菁山路→菁山路101巷"
+                        android:textSize="12sp" />
+
+
+                    <ImageButton
+                        android:id="@+id/Yangmingshan_seemore3"
+                        android:layout_width="120dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="170dp"
+                        android:background="@drawable/seemore_removebg_preview" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/gray_background"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="250dp"
+                        android:layout_height="300dp"
+                        android:layout_marginLeft="25dp"
+                        android:src="@drawable/yangmingshan4" />
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="-30dp"
+                        android:text="大屯自然公園"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="25dp"
+                        android:text="地址:桃園市觀音區中山路二段239號"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="25dp"
+                        android:text="交通:淡水→101縣道→巴拉卡公路→大屯自然公園"
+                        android:textSize="12sp" />
+
+
+                    <ImageButton
+                        android:id="@+id/Yangmingshan_seemore4"
+                        android:layout_width="120dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="170dp"
+                        android:background="@drawable/seemore_removebg_preview" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/gray_background"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="250dp"
+                        android:layout_height="300dp"
+                        android:layout_marginLeft="25dp"
+                        android:src="@drawable/yangmingshan5" />
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="-30dp"
+                        android:text="景觀餐廳-The Top"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="25dp"
+                        android:text="地址:台北市士林區凱旋路61巷4弄33號"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="25dp"
+                        android:text="交通:可搭乘紅5或紅19上陽明山，到文化大學站，再走20分鐘"
+                        android:textSize="12sp" />
+
+
+                    <ImageButton
+                        android:id="@+id/Yangmingshan_seemore5"
+                        android:layout_width="120dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="170dp"
+                        android:background="@drawable/seemore_removebg_preview" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <ImageView
+            android:id="@+id/line5"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/line" />
+
+        <TextView
+            android:id="@+id/newres"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:gravity="bottom"
+            android:text="最新留言"
+            android:textSize="24dp" />
+
+        <ListView
+            android:id="@+id/LV_taipei"
+            android:layout_width="match_parent"
+            android:stackFromBottom="true"
+            android:transcriptMode="alwaysScroll"
+            android:layout_height="400dp" />
+
+        <ImageView
+            android:id="@+id/line6"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/line" />
+
+        <TextView
+            android:id="@+id/res"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:gravity="bottom"
+            android:text="留個言吧!"
+            android:textSize="24dp" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OK" />
+
+    </LinearLayout>
+</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
